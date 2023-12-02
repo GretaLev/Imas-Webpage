@@ -65,10 +65,10 @@ const Projects = () => {
               className="card-img-top"
               alt={project.alt}
             ></img>
-            <div className="card-body">
+            <div className="card-body ps-0">
               <p className="card-text">{project.category}</p>
               <h5 className="card-title">{project.title}</h5>
-              <div className="d-flex">
+              <div className="d-flex ">
                 {project.services.map((service) => (
                   <small className="text-body-secondary" key={service}>
                     {service}
