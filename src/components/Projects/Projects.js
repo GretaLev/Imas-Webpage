@@ -1,7 +1,7 @@
-import press from "../assets/Group 3.svg";
-import opal from "../assets/Group 19.svg";
-import coffee from "../assets/Group 20.svg";
-import seb from "../assets/Group 4.svg";
+import press from "../../assets/press.svg";
+import opal from "../../assets/opal.svg";
+import coffee from "../../assets/coffee.svg";
+import seb from "../../assets/seb.svg";
 
 const Projects = () => {
   return (
