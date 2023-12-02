@@ -97,7 +97,7 @@ const Clients = () => {
     <div className="container">
       <div className="row">
         {clientsList.map((client) => (
-          <div key={client} className="col-2 d-flex align-items-center">
+          <div key={client.alt} className="col-2 d-flex align-items-center">
             <img src={client.logo} alt={client.alt} />
           </div>
         ))}
