@@ -27,7 +27,7 @@
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
     </defs>
-    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
         <g id="landing" transform="translate(-1145, -2846)" fill-rule="nonzero">
             <g id="Group-11" transform="translate(100, 2657)">
                 <g id="Group-8-Copy" transform="translate(1045, 150)">

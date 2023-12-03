@@ -17,90 +17,129 @@ import autobilis from "../../assets/autobilis.svg";
 import unlokk from "../../assets/unlokk.svg";
 import scanorama from "../../assets/scanorama.svg";
 
+import styles from "./Clients.module.scss";
+
 const clientsList = [
   {
     logo: zmones,
-    alt: "zmones.lt",
+    alt: "Zmones.lt",
+    url: "https://zmones.15min.lt/",
   },
   {
     logo: bns,
-    alt: "bns",
+    alt: "Bns",
+    url: "https://www.bns.lt/",
   },
   {
     logo: kiloHealth,
-    alt: "kiloHealth",
+    alt: "KiloHealth",
+    url: "https://kilo.health/",
   },
   {
     logo: guruPay,
-    alt: "guruPay",
+    alt: "GuruPay",
+    url: "https://gurupay.eu/lt/",
   },
   {
     logo: luminor,
-    alt: "luminor",
+    alt: "Luminor",
+    url: "https://www.luminor.lt/",
   },
   {
     logo: telia,
-    alt: "telia",
+    alt: "Telia",
+    url: "https://www.telia.lt/privatiems",
   },
   {
     logo: axioma,
-    alt: "axioma",
+    alt: "Axioma",
+    url: "https://www.axiomametering.com/lt",
   },
   {
     logo: litexpo,
-    alt: "litexpo",
+    alt: "Litexpo",
+    url: "https://zmones.15min.lt",
   },
   {
     logo: gjensidige,
-    alt: "gjensidige",
+    alt: "Gjensidige",
+    url: "https://www.gjensidige.lt/",
   },
   {
     logo: juodeliai,
-    alt: "juodeliai",
+    alt: "Juodeliai",
+    url: "https://www.juodeliai.com/lt/home",
   },
   {
     logo: balticTours,
-    alt: "balticTours",
+    alt: "BalticTours",
+    url: "https://www.baltictours.lt/",
   },
   {
     logo: beKredito,
-    alt: "beKredito",
+    alt: "BeKredito",
+    url: "https://www.bekredito.lt/",
   },
   {
     logo: kitron,
-    alt: "kitron",
+    alt: "Kitron",
+    url: "https://kitron.com/",
   },
   {
     logo: skrendu,
-    alt: "skrendu",
+    alt: "Skrendu.lt",
+    url: "https://skrendu.lt/",
   },
   {
     logo: citadele,
-    alt: "citadele",
+    alt: "Citadele",
+    url: "https://www.citadele.lt/lt/private/",
   },
   {
     logo: autobilis,
-    alt: "autobilis",
+    alt: "Autobilis",
+    url: "https://www.citadele.lt/lt/private/",
   },
   {
     logo: unlokk,
-    alt: "unlokk",
+    alt: "Unlokk",
+    url: "https://unlokk.lt/",
   },
   {
     logo: scanorama,
-    alt: "scanorama",
+    alt: "Scanorama",
+    url: "https://www.scanorama.lt/lt",
   },
 ];
 
 const Clients = () => {
   return (
-    <div className="container">
-      <div className="row">
-        {clientsList.map((client) => (
-          <div key={client.alt} className="col-2 d-flex align-items-center">
-            <img src={client.logo} alt={client.alt} />
-          </div>
-        ))}
+    <div className={styles.clients}>
+      <div className="container">
+        <div className="row mb-8">
+          {clientsList.map((client) => (
+            <div
+              key={client.alt}
+              className={[
+                styles.client,
+                "col-6 col-sm-4 col-md-3 col-xl-2 d-flex align-items-center justify-content-center justify-content-xl-start",
+              ].join(" ")}
+            >
+              <a href={client.url}>
+                <img src={client.logo} alt={client.alt} />
+              </a>
+            </div>
+          ))}
+        </div>
+        <a
+          href="/"
+          className={[
+            styles.allClients,
+            "text-decoration-none font-medium text-white d-flex justify-content-center justify-content-xl-start",
+          ].join(" ")}
+        >
+          All clients
+        </a>
       </div>
     </div>
   );
