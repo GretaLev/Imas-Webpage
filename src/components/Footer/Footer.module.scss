@@ -1,4 +1,15 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 footer {
   background-color: #ffffff;
   color: #000000;
+  padding: 100px 0 41px;
+}
+
+.footerTop {
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px !important;
+  }
 }
