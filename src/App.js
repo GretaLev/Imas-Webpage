@@ -8,11 +8,11 @@ import Services from "./components/Services/Services";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <HeroSection />
       <Services />
       <Projects />
-      <Clients />
+      <Clients /> */}
       <Footer />
     </div>
   );
