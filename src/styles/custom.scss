@@ -55,6 +55,20 @@ $container-max-widths: (
   letter-spacing: 0;
 }
 
+.font-large {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  @include media-breakpoint-up(sm) {
+    font-size: 30px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 50px;
+  }
+}
 .font-extra-large {
   font-size: 40px;
   font-weight: bold;

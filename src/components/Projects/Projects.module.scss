@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.projects {
+  margin-bottom: 140px;
+}
+
+.projectImage {
+  @include media-breakpoint-down(sm) {
+    height: 320px;
+    object-fit: cover;
+  }
+}
