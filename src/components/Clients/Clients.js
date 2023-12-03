@@ -17,7 +17,7 @@ import autobilis from "../../assets/autobilis.svg";
 import unlokk from "../../assets/unlokk.svg";
 import scanorama from "../../assets/scanorama.svg";
 
-import styles from "./Clients.module.scss";
+import styles from "../Clients/Clients.module.scss";
 
 const clientsList = [
   {
