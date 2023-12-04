@@ -1,3 +1,5 @@
+import styles from "./Services.module.scss";
+
 const servicesList = [
   "Software development",
   "Software maintenance",
@@ -8,21 +10,35 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <div className="container">
+    <div className={[styles.services, "container"].join(" ")}>
       <div className="row">
-        <div className="d-flex flex-column col-5">
-          <div className="title">Services</div>
-          <div className="content">
+        <div className="d-flex flex-column col-12 col-md-6 col-xl-5">
+          <div className="font-large mb-8">Services</div>
+          <div
+            className={[styles.servicesContent, "font-small fw-normal"].join(
+              " "
+            )}
+          >
             Project planning and needs analysis, interactive prototype and
             design development, programming of web solutions and mobile
             applications, testing, and software maintenance – these are our
             provided services.
           </div>
         </div>
-        <div className="services-programs d-flex flex-column col-7">
-          <ul>
+        <div className="services-programs d-flex flex-column  col-12 col-md-6 col-xl-7">
+          <ul className="list-unstyled">
             {servicesList.map((service) => (
-              <li key={service}>{service}</li>
+              <li key={service}>
+                <a
+                  href="/"
+                  className={[
+                    styles.service,
+                    "font-medium text-decoration-none text-white",
+                  ].join(" ")}
+                >
+                  {service}
+                </a>
+              </li>
             ))}
           </ul>
         </div>

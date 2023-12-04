@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       {/* <Header />
-      <HeroSection />
-      <Services /> */}
+      <HeroSection /> */}
+      <Services />
       <Projects />
       <Clients />
       <Footer />
