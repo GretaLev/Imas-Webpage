@@ -13,6 +13,7 @@ const Header = () => {
             "font-small-medium fw-bold text-decoration-none d-flex align-items-center justify-content-center",
           ].join(" ")}
         >
+          {" "}
           Get in touch
         </a>
       </div>
