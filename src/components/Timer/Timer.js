@@ -23,8 +23,8 @@ const Timer = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const startDate = moment("2015-06-26");
-      const currentDate = moment();
+      const startDate = moment.utc("2015-06-26");
+      const currentDate = moment.utc();
       const diffDuration = moment.duration(currentDate.diff(startDate));
       setDuration(diffDuration);
     }, 1000);
