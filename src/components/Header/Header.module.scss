@@ -1,16 +1,31 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .header {
   background-color: black;
+  margin-bottom: 106px;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1390px;
+  }
 }
 
 .btnBrand {
-  height: 56px;
-  width: 192px;
+  height: 36px;
+  width: 152px;
   border-radius: 15px;
   background-color: #ff0022;
+  border: 0;
   color: #ffffff;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 20px;
+
+  @include media-breakpoint-up(sm) {
+    height: 46px;
+    width: 162px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 56px;
+    width: 192px;
+  }
 }

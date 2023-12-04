@@ -2,7 +2,7 @@ import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className="container">
         <div className={["row mb-5 mb-lg-12", styles.footerTop].join(" ")}>
           <div className="col-12 col-lg-8 col-xl-6 mb-5 mb-lg-8">
