@@ -1,49 +1,21 @@
-$body-bg: #000;
-$body-color: white;
-
-$grid-gutter-width: 0.938rem;
-
-$btn-bg: #ff0022;
-
-$spacer: 5px;
-$spacers: (
-  0: 0,
-  1: $spacer,
-  2: $spacer * 2,
-  3: $spacer * 3,
-  4: $spacer * 4,
-  5: $spacer * 5,
-  6: $spacer * 6,
-  7: $spacer * 7,
-  8: $spacer * 8,
-  9: $spacer * 9,
-  10: $spacer * 10,
-  11: $spacer * 11,
-  12: $spacer * 12,
-  13: $spacer * 13,
-  14: $spacer * 14,
-  15: $spacer * 15,
-);
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1270px,
-  // xxl: 1440px,
-);
-
+@import "./variables";
 @import "~bootstrap/scss/bootstrap.scss";
 
-.font-medium {
-  font-size: 18px;
+.container {
+  padding: 0 15px;
+}
+
+.font-small-timer {
+  font-size: 10px;
   font-weight: bold;
   letter-spacing: 0;
-  @include media-breakpoint-up(sm) {
-    font-size: 20px;
-  }
-  @include media-breakpoint-up(md) {
-    font-size: 24px;
-  }
+  line-height: 11px;
+  text-align: center;
+}
+.font-extra-small {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
 .font-small {
@@ -55,10 +27,30 @@ $container-max-widths: (
   }
 }
 
-.font-extra-small {
-  font-size: 14px;
+.font-small-medium {
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 0;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+}
+
+.font-medium {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
 }
 
 .font-large {
@@ -76,14 +68,16 @@ $container-max-widths: (
   }
 }
 .font-extra-large {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
+  @include media-breakpoint-up(sm) {
+    font-size: 40px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+  }
   @include media-breakpoint-up(lg) {
     font-size: 60px;
   }
-}
-
-.container {
-  padding: 0 15px;
 }

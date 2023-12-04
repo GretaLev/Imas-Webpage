@@ -8,8 +8,8 @@ import Services from "./components/Services/Services";
 function App() {
   return (
     <div>
-      {/* <Header />
-      <HeroSection /> */}
+      <Header />
+      <HeroSection />
       <Services />
       <Projects />
       <Clients />

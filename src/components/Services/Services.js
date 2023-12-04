@@ -25,7 +25,7 @@ const Services = () => {
             provided services.
           </div>
         </div>
-        <div className="services-programs d-flex flex-column  col-12 col-md-6 col-xl-7">
+        <div className="services-programs d-flex flex-column col-12 col-md-6 col-xl-7">
           <ul className="list-unstyled">
             {servicesList.map((service) => (
               <li key={service}>
