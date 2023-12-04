@@ -13,6 +13,7 @@ const projectsList = [
     mainImage: press,
     logo: pressLogo,
     alt: "15min.",
+    mainAlt: "Press",
     title: "15min",
     category: "Press",
     services: ["Research", "UI/UX", "Mobile application"],
@@ -20,7 +21,8 @@ const projectsList = [
   {
     mainImage: opal,
     logo: opalLogo,
-    alt: "Opal-transfer",
+    alt: "Opal",
+    mainAlt: "Opal-transfer",
     title: "Opal Transfer",
     category: "Fintech",
     services: ["Research", "UI/UX", "Mobile application"],
@@ -28,7 +30,8 @@ const projectsList = [
   {
     mainImage: coffee,
     logo: coffeeLogo,
-    alt: "Huracan-coffee",
+    alt: "Coffee",
+    mainAlt: "Huracan-coffee",
     title: "Huracan Coffee",
     category: "E-commerce & Retail",
     services: ["Developing", "Website"],
@@ -37,6 +40,7 @@ const projectsList = [
     mainImage: seb,
     logo: sebLogo,
     alt: "Seb",
+    mainAlt: "SebBank",
     title: "Seb",
     category: "Fintech",
     services: ["Strategy", "Developing"],
@@ -58,14 +62,19 @@ const Projects = () => {
       <div className="row">
         {projectsList.map((project) => (
           <div
-            className="card col-12 col-sm-6 col-md-4 col-xl-3"
+            className="card col-12 col-sm-6 col-md-4 col-xl-3 mb-8 mb-xl-0"
             key={project.title}
           >
-            <a href="/">
+            <a href="/" className="position-relative">
+              <img
+                src={project.logo}
+                alt={project.alt}
+                className={[styles.projectLogo, "position-absolute"].join(" ")}
+              />
               <img
                 src={project.mainImage}
                 className={[styles.projectImage, "card-img-top"].join(" ")}
-                alt={project.alt}
+                alt={project.mainAlt}
               ></img>
             </a>
             <div className="card-body ps-0">
@@ -74,11 +83,11 @@ const Projects = () => {
               </p>
               <h5 className="card-title font-medium mb-2">{project.title}</h5>
               <div className="d-flex">
-                <ul className="d-flex ps-0">
+                <ul className="d-flex ps-0 mb-0">
                   {project.services.map((service) => (
                     <li
                       key={service}
-                      className="list-unstyled font-extra-small me-2"
+                      className="list-unstyled font-extra-small me-md-1 me-xl-2"
                     >
                       {service}
                     </li>

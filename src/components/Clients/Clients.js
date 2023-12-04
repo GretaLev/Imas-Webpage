@@ -122,7 +122,7 @@ const Clients = () => {
               key={client.alt}
               className={[
                 styles.client,
-                "col-6 col-sm-4 col-md-3 col-xl-2 d-flex align-items-center justify-content-center justify-content-xl-start",
+                "col-6 col-sm-4 col-md-3 col-xl-2 d-flex align-items-center justify-content-center justify-content-sm-start",
               ].join(" ")}
             >
               <a href={client.url}>
@@ -135,7 +135,7 @@ const Clients = () => {
           href="/"
           className={[
             styles.allClients,
-            "text-decoration-none font-medium text-white d-flex justify-content-center justify-content-xl-start",
+            "text-decoration-none font-medium text-white d-flex justify-content-center justify-content-sm-start",
           ].join(" ")}
         >
           All clients

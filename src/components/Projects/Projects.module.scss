@@ -3,12 +3,39 @@
 @import "~bootstrap/scss/mixins";
 
 .projects {
-  margin-bottom: 140px;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 80px;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 100px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 140px;
+  }
 }
 
 .projectImage {
   @include media-breakpoint-down(sm) {
     height: 320px;
     object-fit: cover;
+  }
+}
+
+.projectLogo {
+  top: 20px;
+  left: 16px;
+
+  @include media-breakpoint-up(md) {
+    top: 25px;
+    left: 12px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: 30px;
+    left: 20px;
   }
 }
