@@ -1,9 +1,9 @@
-import Logo from "../../../assets/black-logo.svg";
-import closingBtn from "../../../assets/closing-btn.svg";
+import Logo from "../../assets/black-logo.svg";
+import closingBtn from "../../assets/closing-btn.svg";
 
-const ClientsPageHeader = () => {
+const PagesHeader = () => {
   return (
-    <div className="container">
+    <div className="container mb-15">
       <div className="d-flex flex-row justify-content-between align-items-center mt-4">
         <img src={Logo} alt="company-logo" />
         <a
@@ -17,4 +17,4 @@ const ClientsPageHeader = () => {
   );
 };
 
-export default ClientsPageHeader;
+export default PagesHeader;

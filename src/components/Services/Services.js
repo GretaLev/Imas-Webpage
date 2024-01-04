@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Services.module.scss";
 
 const servicesList = [
@@ -29,15 +30,15 @@ const Services = () => {
           <ul className="list-unstyled">
             {servicesList.map((service) => (
               <li key={service}>
-                <a
-                  href="/"
+                <Link
+                  to={"/services"}
                   className={[
                     styles.service,
                     "font-medium text-decoration-none text-white",
                   ].join(" ")}
                 >
                   {service}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

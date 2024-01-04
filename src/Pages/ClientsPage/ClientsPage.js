@@ -1,12 +1,12 @@
+import PagesHeader from "../../components/PagesHeader/PagesHeader";
 import ClientsPageClientsList from "./ClientsPageClientsList/ClientsPageClientsList";
 import ClientsPageContent from "./ClientsPageContent/ClientsPageContent";
 import ClientsPageFooter from "./ClientsPageFooter/ClientsPageFooter";
-import ClientsPageHeader from "./ClientsPageHeader/ClientsPageHeader";
 
 const ClientsPage = () => {
   return (
     <div className="bg-white text-black">
-      <ClientsPageHeader />
+      <PagesHeader />
       <ClientsPageContent />
       <ClientsPageClientsList />
       <ClientsPageFooter />

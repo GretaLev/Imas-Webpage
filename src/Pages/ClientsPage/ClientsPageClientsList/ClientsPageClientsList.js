@@ -115,7 +115,7 @@ const clientsList = [
 const ClientsPageClientsList = () => {
   return (
     <div className="container">
-      <div className="row mb-8 offset-md-1">
+      <div className="row mb-8 offset-md-1 col-9">
         {clientsList.map((client) => (
           <div
             key={client.alt}

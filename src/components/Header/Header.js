@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import styles from "./Header.module.scss";
 
@@ -6,7 +7,8 @@ const Header = () => {
     <div className={[styles.header, "container"].join(" ")}>
       <div className="d-flex flex-row justify-content-between align-items-center mt-4">
         <img src={Logo} alt="company-logo" />
-        <a
+        <Link
+          to={"/contacts"}
           href="#footer"
           className={[
             styles.btnBrand,
@@ -15,7 +17,7 @@ const Header = () => {
         >
           {" "}
           Get in touch
-        </a>
+        </Link>
       </div>
     </div>
   );
