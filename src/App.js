@@ -1,19 +1,15 @@
-import Clients from "./components/Clients/Clients";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import HeroSection from "./components/HeroSection/HeroSection";
-import Projects from "./components/Projects/Projects";
-import Services from "./components/Services/Services";
+import { Routes, Route } from "react-router-dom";
+
+import ClientsPage from "./components/ClientsPage/ClientsPage";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
     <div>
-      <Header />
-      <HeroSection />
-      <Services />
-      <Projects />
-      <Clients />
-      <Footer />
+      <Routes>
+        <Route path="/clients" element={<ClientsPage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </div>
   );
 }

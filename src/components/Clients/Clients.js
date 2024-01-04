@@ -18,6 +18,7 @@ import unlokk from "../../assets/unlokk.svg";
 import scanorama from "../../assets/scanorama.svg";
 
 import styles from "./Clients.module.scss";
+import { Link } from "react-router-dom";
 
 const clientsList = [
   {
@@ -131,15 +132,15 @@ const Clients = () => {
             </div>
           ))}
         </div>
-        <a
-          href="/"
+        <Link
+          to={`/clients`}
           className={[
             styles.allClients,
             "text-decoration-none font-medium text-white d-flex justify-content-center justify-content-sm-start",
           ].join(" ")}
         >
           All clients
-        </a>
+        </Link>
       </div>
     </div>
   );
