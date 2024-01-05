@@ -65,7 +65,7 @@ const Projects = () => {
             className="card col-12 col-sm-6 col-md-4 col-xl-3 mb-8 mb-xl-0"
             key={project.title}
           >
-            <a href="/" className="position-relative">
+            <a href="/projects" className="position-relative">
               <img
                 src={project.logo}
                 alt={project.alt}
