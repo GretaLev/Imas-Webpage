@@ -20,25 +20,20 @@ const ProjectsPageContent = () => {
           <img src={opalWeb} alt="Opal"></img>
         </div>
       </div>
-      <div className="col-9 offset-md-1">
-        <div className="font-medium d-flex mb-4">
-          <div className="col-4">Services</div>
-          <div className="col-4">Results</div>
-          <div className="col-3">Date</div>
+      <div className="col-9 mb-16 d-flex offset-1">
+        <div className="col-4 font-medium">
+          Services
+          <div className="font-small fw-normal">Platform UX/UI</div>
+          <div className="font-small fw-normal">Style discovery</div>
         </div>
-
-        <div className="d-flex font-small fw-normal mb-16">
-          <div className="col-3">
-            <div>Platform UX/UI</div>
-            <div>Style discovery</div>
-          </div>
-          <div className="col-3">
-            <div>Web page</div>
-            <div>E-platform</div>
-          </div>
-          <div className="col-3">
-            <div>2023</div>
-          </div>
+        <div className="col-4 font-medium">
+          Results
+          <div className="font-small fw-normal">Web page</div>
+          <div className="font-small fw-normal">E-platform</div>
+        </div>
+        <div className="col-3 font-medium">
+          Date
+          <div className="font-small fw-normal">2023</div>
         </div>
       </div>
       <div className="offset-md-1 col-8">
@@ -106,7 +101,7 @@ const ProjectsPageContent = () => {
           <div>
             <img src={reviewImage} alt="user" className="me-4"></img>
           </div>
-          <div className="">
+          <div>
             <div className="font-medium">Dainius Miniotas</div>
             <div>Head Of Marketing</div>
           </div>
