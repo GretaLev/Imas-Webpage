@@ -1,0 +1,61 @@
+.addressBox {
+  height: 500px;
+  width: 508px;
+  background-color: rgba(0, 0, 0, 0.03);
+  transition: 0.3s;
+
+  &:hover {
+    background-image: url("../../../assets/klaipeda.svg");
+    color: #ffffff;
+  }
+
+  &:hover .time {
+    opacity: 1;
+  }
+  &:hover .hourPeriod {
+    opacity: 1;
+  }
+  &:hover .timeBox {
+    box-shadow: inset 0 1px 0 0 #ffffff;
+  }
+
+  &:hover .whiteFontOnHover {
+    color: #ffffff;
+  }
+}
+
+.cityName {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 50px;
+}
+
+.contactsInfo {
+  margin-bottom: 150px;
+  opacity: 0.6;
+}
+
+.time {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 50px;
+  opacity: 0.2;
+}
+
+.hourPeriod {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  opacity: 0.2;
+}
+
+.timeBox {
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.whiteFontOnHover {
+  color: #000000;
+}
